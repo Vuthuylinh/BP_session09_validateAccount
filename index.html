@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vaildate account</title>
+</head>
+<body>
+<script>
+ function validateAccount(account) {
+     regexp=/^[_a-z0-9]{6}$/;
+     if(regexp.test(account)){
+         alert("It is a validate Account");
+     }else{
+         alert("It is not a validate account");
+     }
+
+ }
+ let account1= "abc_12";
+ let account2="abcdef";
+ let account3=@_1234;
+ validateAccount(account1);
+ validateAccount(account2);
+ validateAccount(account3);
+
+
+</script>
+</body>
+</html>
